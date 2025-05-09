@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp" />
+
+    <RadioGroup
+        android:id="@+id/rgUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh nhân"
+            android:textSize="16sp"
+            android:checked="true"
+            android:textColor="#000000"
+            android:layout_marginEnd="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rbDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bác sĩ"
+            android:textSize="16sp"
+            android:textColor="#000000"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Tên đăng nhập"
+        android:inputType="textEmailAddress"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Xác nhận mật khẩu"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edtFullName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Họ và Tên"
+        android:inputType="textPersonName"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edtBirthPlace"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Nơi sinh"
+        android:inputType="text"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        android:layout_marginTop="12dp"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Đăng nhập"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:background="#1976D2" />
+
+    <TextView
+        android:id="@+id/tvToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản? Đăng ký"
+        android:textColor="#4169E1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

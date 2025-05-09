@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">vd1</string>
+    <string name="prompt_specialization">Chọn chuyên khoa</string>
+    <string name="prompt_doctor">Chọn bác sĩ</string>
+</resources>

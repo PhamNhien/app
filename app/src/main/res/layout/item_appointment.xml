@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/item_background">
+
+    <TextView
+        android:id="@+id/textViewPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bệnh nhân"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/textViewDoctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bác sĩ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chuyên khoa"
+        android:textSize="16sp"
+        android:textColor="#666"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/textViewAppointmentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời gian khám: 10:00 - 11:00, 20/04/2025"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

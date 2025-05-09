@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F6F9">
+
+    <!-- Thanh tiêu đề -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tvHospitalName"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Bệnh viện Đa khoa Sài Gòn"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="#222"
+            android:text="Đăng xuất"
+            android:layout_marginLeft="135dp"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Menu chức năng -->
+    <GridLayout
+        android:id="@+id/gridMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="16dp"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true">
+
+        <!-- Bệnh nhân -->
+        <LinearLayout
+            android:id="@+id/cardPatients"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_agenda" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bệnh nhân"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Bác sĩ -->
+        <LinearLayout
+            android:id="@+id/cardDoctors"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_myplaces" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bác sĩ"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Lịch hẹn -->
+        <LinearLayout
+            android:id="@+id/cardAppointments"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_month" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng kí lịch khám"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- Hóa đơn -->
+        <LinearLayout
+            android:id="@+id/cardBills"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@android:drawable/ic_menu_view" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xem lịch khám"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

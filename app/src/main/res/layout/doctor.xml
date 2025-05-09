@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF">
+
+    <!-- Thanh tiêu đề -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFA500"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textSize="18sp"
+            android:textColor="#333"
+            android:textStyle="bold"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DANH SÁCH BÁC SĨ"
+            android:textColor="#333"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Danh sách bác sĩ -->
+    <ListView
+        android:id="@+id/listDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@+id/btnAddDoctor"
+        android:dividerHeight="8dp"
+        android:padding="16dp" />
+
+    <!-- Nút thêm bác sĩ -->
+    <Button
+        android:id="@+id/btnAddDoctor"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="#1E88E5"
+        android:text="+"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/round_button" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:elevation="4dp"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:clipToPadding="false"
+    android:background="@drawable/border_rounded">
+
+    <TextView
+        android:id="@+id/tvPatientId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: BN001"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên: Nguyễn Văn A"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPatientPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SĐT: 0909123456"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvPatientAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Địa chỉ: Hà Nội"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+</LinearLayout>
